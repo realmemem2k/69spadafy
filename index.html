@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2f2f2f">
+  <title>Spadafy — Home prototype</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-pill">
+      <a class="brand" href="#top" aria-label="Spadafy, back to top"><img src="./assets/b980e.svg" alt="Spadafy"></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><img src="./assets/d3999.svg" alt=""></button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Main navigation" hidden>
+      <a href="#team">The team</a><a href="#services">Services</a><a href="#care">What we care about</a><a href="#health-check">Health Check</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="./assets/e1294.png" alt="" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <h1 id="hero-title">Your First &amp; Last<br>VDI Partner</h1>
+      <a class="pill-button hero-button" href="#contact">Let’s Talk</a>
+    </section>
+
+    <section class="team-intro panel-white" id="team">
+      <div class="page-gutter">
+        <div class="team-opening">
+          <div class="team-lead"><span class="eyebrow">So, who are we?</span><h2>OK so we should probably address our baggage first. It’s not a red flag, promise, but we’re very serious about visual desktop infrastructure (VDI) and End User Computing.</h2></div>
+          <p class="section-body align-right">We bring deep expertise and help companies figure out what technology they should use, how to implement it correctly, and then we help manage and support it all once it’s in place.</p>
+        </div>
+        <div class="team-roster">
+          <h3>16 years of VDI expertise.<br>16 years of making technology seamless,<br>so people can do their best work.</h3>
+          <div class="team-carousel" tabindex="0" aria-label="Spadafy team carousel">
+            <div class="team-track">
+              <article class="person"><h4>Rod J.</h4><p>Co-Founder</p></article>
+              <article class="person"><h4>Marc L.</h4><p>Co-Founder</p></article>
+              <article class="person"><h4>Earl L.</h4><p>CISO</p></article>
+              <article class="person"><h4>Nick V.</h4><p>CTO</p></article>
+              <article class="person"><h4>Kevin G.</h4><p>Director, VDI &amp; End User Computing</p></article>
+              <article class="person"><h4>Dan G.</h4><p>Director of IT Infrastructure</p></article>
+              <article class="person"><h4>Bill S.</h4><p>VP of IT Infrastructure</p></article>
+              <article class="person"><h4>Kyle M.</h4><p>VP of Technology Solutions</p></article>
+              <article class="person"><h4>Amy M.</h4><p>Senior Unified Collaboration Engineer</p></article>
+              <article class="person"><h4>Cody Harmon</h4><p>Director of Networking Engineering</p></article>
+              <article class="person"><h4>Luke S.</h4><p>Solutions Engineer</p></article>
+              <article class="person"><h4>Carl O.</h4><p>Solutions Engineer</p></article>
+            </div>
+          </div>
+          <div class="carousel-controls"><button type="button" id="team-prev" aria-label="Previous team members">←</button><button type="button" id="team-next" aria-label="Next team members">→</button></div>
+          <button class="pill-button" type="button" data-dialog-open>Get to Know the Team Better</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-bridge" aria-label="People at work"><img src="./assets/c3576.png" alt="A person working at a desk"></section>
+
+    <section class="stats panel-white" id="stats">
+      <div class="page-gutter">
+        <h2 class="display-title">When you’re with us,<br>we’re going the distance.</h2>
+        <p class="section-body stats-copy">That means helping your organisation design, modernise, implement and operate the environments that your employees rely on every day, from A to Z, improving the end-user experience so well, everything simply works as it should.</p>
+        <h3 class="sub-title green-title">Our green flags</h3>
+        <div class="stats-grid">
+          <article class="stat stat-small"><img class="stat-icon" src="./assets/410ff.svg" alt=""><div><p>Total Number<br>of Desktops Managed</p><strong>40k</strong></div></article>
+          <article class="stat stat-small"><img class="stat-icon" src="./assets/e484e.svg" alt=""><div><strong>200+</strong><p>Customers</p></div></article>
+          <article class="stat stat-global"><img class="stat-photo" src="./assets/80615.png" alt=""><div><strong>North America,<br>Europe, Asia</strong><p>Global Delivery Experience</p></div></article>
+          <article class="stat stat-small"><img class="stat-icon" src="./assets/e484e.svg" alt=""><div><strong>16</strong><p>Years of VDI Experience</p></div></article>
+          <article class="stat stat-tech"><div><p>Tech Managed</p><strong>Citrix<br>Omnissa Horizon<br>Azure Virtual Desktop<br>Nerdio<br>Imprivata</strong></div></article>
+          <article class="stat stat-small"><img class="stat-icon" src="./assets/e484e.svg" alt=""><div><p>Expertise Across</p><strong>30+</strong><p>Technology Partners</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-intro panel-white" id="services">
+      <div class="page-gutter">
+        <h2 class="display-title">Connected at every level:<br>mind, soul and our services.</h2>
+        <div class="intro-copy align-right"><p class="section-body">Technology can be complex. We get that. Spadafy exists to make it feel simple. We look after the whole picture, from identity and security to infrastructure, cloud and everything in between.<br><br>Because it all works best when it works together. Remove one, and it’s on the rocks. Forget the other, and we’ll be spending too much time retracing our steps and making sense of where we went wrong.</p><a class="pill-button" href="#services-list">Explore Services</a></div>
+      </div>
+    </section>
+
+    <section class="horizontal-section services-section" id="services-list" data-horizontal>
+      <div class="horizontal-sticky"><div class="horizontal-track services-track">
+        <article class="service-card service-first"><img src="./assets/eb24e.png" alt=""><div class="card-copy"><h3>VDI Implementation</h3><p>Spadafy designs and deploy virtual desktop environments tailored to your users, applications, security, and infrastructure. From platform setup and image design to app delivery, profile management, testing, and rollout, we manage the entire deployment process.</p></div></article>
+        <article class="service-card"><img src="./assets/75d68.png" alt=""><div class="card-copy"><h3>VDI Assessments and Architecture Design</h3><p>We assess existing VDI and end-user computing environments to identify performance, capacity, and operational challenges. We then design a future-ready architecture and roadmap aligned with business goals, user experience, security, and growth needs.</p></div></article>
+        <article class="service-card"><img src="./assets/6c9e8.png" alt=""><div class="card-copy"><h3>VDI Managed Services</h3><p>We provide ongoing VDI management and engineering support, including monitoring, maintenance, troubleshooting, patching, upgrades, and performance optimization. Acting as an extension of your IT team, we keep environments stable, secure, and continuously improved.</p></div></article>
+        <article class="service-card"><img src="./assets/076bb.png" alt=""><div class="card-copy"><h3>User Experience &amp;<br>Performance Optimization</h3><p>We analyze the end-user experience across login times, application performance, profiles, desktops, and infrastructure to uncover bottlenecks. Using real-world data, we optimize VDI environments for faster, more reliable, and consistent user experiences.</p></div></article>
+        <article class="service-card service-hybrid"><img class="hybrid-base" src="./assets/6c9e8.png" alt=""><img class="hybrid-top" src="./assets/fdf15.png" alt=""><div class="card-copy"><h3>Hybrid Cloud Modernization</h3><p>Spadafy helps organizations modernize legacy infrastructure with hybrid environments that blend on-premises platforms and public cloud services. We optimize workload placement, resiliency, scalability, and cost efficiency while creating a practical path to modernization.</p></div></article>
+        <article class="service-card"><img src="./assets/93c9d.png" alt=""><div class="card-copy"><h3>Imprivata Support</h3><p>We provide implementation, optimization, troubleshooting, and ongoing support for Imprivata environments. We help improve authentication workflows, tap-and-go access, shared workstation experiences, and integration with VDI, clinical applications, and endpoint platforms.</p></div></article>
+      </div></div>
+    </section>
+
+    <section class="care-intro panel-white" id="care"><h2 class="display-title centered">A few things<br>we care about. A lot.</h2><p class="section-body">Behind every environment are people who need to get things done. Their work gives the technology its purpose.</p></section>
+    <section class="horizontal-section care-section" id="care-list" data-horizontal>
+      <div class="horizontal-sticky"><div class="horizontal-track care-track">
+        <article class="care-slide"><img src="./assets/e24eb.png" alt=""><div class="card-copy"><h3>Doctors spend more time with patients</h3><p>A clinician needs access to the applications their work depends on.</p></div></article>
+        <article class="care-slide"><img src="./assets/617b2.png" alt=""><div class="card-copy"><h3>Employees start where they left off</h3><p>A colleague needs to reach their working environment from another location</p></div></article>
+        <article class="care-slide"><img src="./assets/0b086.png" alt=""><div class="card-copy"><h3>IT teams solve bigger problems instead of repeating the same fixes</h3><p>IT needs a manageable way to support people, desktops and access.</p></div></article>
+      </div></div>
+    </section>
+
+    <section class="testimonials panel-white"><div class="page-gutter"><h2 class="display-title">Good headlines<br>from our partners</h2><p class="sub-title testimonial-sub">(yes, there was someone else before you).</p><div class="testimonial-grid"><blockquote><p>“Spadafy helped us get a clear picture of what was really happening in our VDI environment. Their team identified issues we had been chasing for months and gave us a practical roadmap to improve performance and stability.”</p><cite>Enterprise IT Director</cite></blockquote><blockquote><p>“What stood out was that Spadafy didn’t just hand us a design and walk away. They helped us architect the solution, implement it, and continue to support the environment as an extension of our internal team.”</p><cite>VP of Infrastructure</cite></blockquote><blockquote><p>“Spadafy understands the entire VDI stack, not just one product. They were able to look across the desktop, applications, profiles, storage, and infrastructure to improve the overall user experience.”</p><cite>Director of End User Computing</cite></blockquote></div></div></section>
+
+    <section class="health-check panel-white" id="health-check"><div class="page-gutter"><div class="health-top"><span class="eyebrow">Are we good?</span><h2>We offer a free Health Check so that we can get to the root of the problem quickly and efficiently.</h2><div class="health-summary align-right"><p class="section-body">VDI and infrastructure problems are rarely caused by one thing. It means that once we get talking, we can bunker down and build a practical plan versus jumping to conclusions.</p><a class="pill-button" href="#health-steps">Explore the Health Check</a></div></div><div class="health-steps" id="health-steps"><article><span>01</span><div><h3>Book free consultation</h3><p>Get started by scheduling a free consultation. We’ll listen to your needs and explore how we can help bring your project to life.</p></div></article><article><span>02</span><div><h3>Audit &amp; documentation</h3><p>Our team will conduct a thorough audit of your project, gathering essential details and preparing the documents for next steps.</p></div></article><article><span>03</span><div><h3>Review &amp; feedback</h3><p>Review the action plan we provide, and then let us know if there are any adjustments or suggestions. Collaboration is key!</p></div></article><button type="button" class="request-card" data-contact-open><span>Send a request</span><span>→</span></button></div></div></section>
+
+    <section class="contact-section" id="contact"><img class="contact-goat" src="./assets/0cc90.png" alt="VDI Goat illustration"><br><h2>It’s like they say,<br>communication is key.</h2><p>If, like us, you’re in it for the long haul then shoot us a message.<br>We’re quick texters, don’t worry.</p><button class="pill-button" type="button" data-contact-open>Start a Conversation</button></section>
+
+    <section class="loading-transition" id="next-page" aria-label="Preview of the next page"><div class="loading-sticky"><div class="loading-card"><h2>The Tech</h2></div></div></section>
+  </main>
+
+  <dialog id="prototype-dialog"><button type="button" class="dialog-close" aria-label="Close"></button><h2>Spadafy</h2><p>This is a local prototype. The next destination and contact form have not been designed yet.</p><button type="button" class="pill-button dialog-dismiss">Got it</button></dialog>
+</body>
+</html>
